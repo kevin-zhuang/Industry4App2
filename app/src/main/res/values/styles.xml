@@ -1,0 +1,78 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="textViewTitleStyle">
+        <item name="android:gravity">left</item>
+        <item name="android:textSize">20sp</item>
+        <!--<item name="android:layout_marginLeft">10dp</item>-->
+        <item name="android:layout_weight">1</item>
+
+    </style>
+
+    <style name="planTextViewStyle">
+
+        <item name="android:gravity">left</item>
+        <item name="android:textSize">15sp</item>
+        <!--<item name="android:layout_marginLeft">10dp</item>-->
+        <item name="android:layout_weight">1</item>
+
+    </style>
+
+    <style name="mainControlTextViewStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_marginTop">4dp</item>
+
+    </style>
+
+    <style name="mainControlImageViewStyle">
+        <item name="android:layout_width">36dp</item>
+        <item name="android:layout_height">36dp</item>
+        <item name="android:background">@drawable/green</item>
+
+    </style>
+
+    <style name="mainControlLinearLayoutStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+
+    </style>
+
+
+    <style name="opcLinearLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="opcTextShow">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="opcTextShowInfo">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:background">@color/listItemClickColor</item>
+
+    </style>
+
+</resources>

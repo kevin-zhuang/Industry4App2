@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <TableRow
+        android:id="@+id/llTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <TextView
+            style="@style/textViewTitleStyle"
+            android:id="@+id/tvShowStockId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="id"
+            />
+
+        <TextView
+            android:id="@+id/tvShowGroupNum"
+            style="@style/textViewTitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="groupnum" />
+
+        <TextView
+            android:id="@+id/tvShowRowNum"
+            style="@style/textViewTitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="rownum" />
+
+        <TextView
+            android:id="@+id/tvShowColumNum"
+            style="@style/textViewTitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="columnum" />
+
+        <TextView
+            android:id="@+id/tvShowName"
+            style="@style/textViewTitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="name" />
+
+        <TextView
+            android:id="@+id/tvShowType"
+            style="@style/textViewTitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="type" />
+
+        <TextView
+            android:id="@+id/tvShowNum"
+            style="@style/textViewTitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="num" />
+
+
+    </TableRow>
+
+
+    <TableRow
+        android:id="@+id/tbContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/list_item_bg"
+        >
+
+        <TextView
+            android:id="@+id/tvStockId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            style="@style/planTextViewStyle"
+
+            />
+
+        <TextView
+            android:id="@+id/tvGroupNum"
+            style="@style/planTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2" />
+
+        <TextView
+            android:id="@+id/tvRowNum"
+            style="@style/planTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3" />
+
+        <TextView
+            android:id="@+id/tvColumNum"
+            style="@style/planTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4" />
+
+        <TextView
+            android:id="@+id/tvName"
+            style="@style/planTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5" />
+
+        <TextView
+            android:id="@+id/tvType"
+            style="@style/planTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6" />
+
+        <TextView
+            android:id="@+id/tvNum"
+            style="@style/planTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7" />
+
+
+    </TableRow>
+
+</TableLayout>

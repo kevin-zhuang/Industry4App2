@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/slMain"
+    tools:context=".activity.MainControlActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="AGV" />
+
+                <LinearLayout style="@style/mainControlLinearLayoutStyle">
+
+                    <ImageView
+                        android:id="@+id/ivAgvInit"
+                        style="@style/mainControlImageViewStyle" />
+
+                    <TextView
+                        style="@style/mainControlTextViewStyle"
+                        android:text="init" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/mainControlLinearLayoutStyle">
+
+                    <ImageView
+                        android:id="@+id/ivAgvPreop"
+                        style="@style/mainControlImageViewStyle" />
+
+                    <TextView
+                        style="@style/mainControlTextViewStyle"
+                        android:text="preop" />
+                </LinearLayout>
+
+
+                <LinearLayout style="@style/mainControlLinearLayoutStyle">
+
+                    <ImageView
+                        android:id="@+id/ivAgvOp"
+                        style="@style/mainControlImageViewStyle" />
+
+                    <TextView
+                        style="@style/mainControlTextViewStyle"
+                        android:text="op" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/mainControlLinearLayoutStyle">
+
+                    <ImageView
+                        android:id="@+id/ivAgvStop"
+                        style="@style/mainControlImageViewStyle" />
+
+                    <TextView
+                        style="@style/mainControlTextViewStyle"
+                        android:text="stop" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="error" />
+
+                    <TextView
+                        android:id="@+id/tvAgvError"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="#12121212"
+                        android:text="" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="加工线" />
+
+                <LinearLayout style="@style/mainControlLinearLayoutStyle">
+
+                    <ImageView
+                        android:id="@+id/ivProcessInit"
+                        style="@style/mainControlImageViewStyle" />
+
+                    <TextView
+                        style="@style/mainControlTextViewStyle"
+                        android:text="init" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/mainControlLinearLayoutStyle">
+
+                    <ImageView
+                        android:id="@+id/ivProcessPreop"
+                        style="@style/mainControlImageViewStyle" />
+
+                    <TextView
+                        style="@style/mainControlTextViewStyle"
+                        android:text="preop" />
+                </LinearLayout>
+
+
+                <LinearLayout style="@style/mainControlLinearLayoutStyle">
+
+                    <ImageView
+                        android:id="@+id/ivProcessOp"
+                        style="@style/mainControlImageViewStyle" />
+
+                    <TextView
+                        style="@style/mainControlTextViewStyle"
+                        android:text="op" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/mainControlLinearLayoutStyle">
+
+                    <ImageView
+                        android:id="@+id/ivProcessStop"
+                        style="@style/mainControlImageViewStyle" />
+
+                    <TextView
+                        style="@style/mainControlTextViewStyle"
+                        android:text="stop" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="error" />
+
+                    <TextView
+                        android:id="@+id/tvProcessError"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="#12121212"
+                        android:text="" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="装配线" />
+
+                <LinearLayout style="@style/mainControlLinearLayoutStyle">
+
+                    <ImageView
+                        android:id="@+id/ivAssemblyInit"
+                        style="@style/mainControlImageViewStyle" />
+
+                    <TextView
+                        style="@style/mainControlTextViewStyle"
+                        android:text="init" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/mainControlLinearLayoutStyle">
+
+                    <ImageView
+                        android:id="@+id/ivAssemblyPreop"
+                        style="@style/mainControlImageViewStyle" />
+
+                    <TextView
+                        style="@style/mainControlTextViewStyle"
+                        android:text="preop" />
+                </LinearLayout>
+
+
+                <LinearLayout style="@style/mainControlLinearLayoutStyle">
+
+                    <ImageView
+                        android:id="@+id/ivAssemblyOp"
+                        style="@style/mainControlImageViewStyle" />
+
+                    <TextView
+                        style="@style/mainControlTextViewStyle"
+                        android:text="op" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/mainControlLinearLayoutStyle">
+
+                    <ImageView
+                        android:id="@+id/ivAssemblyStop"
+                        style="@style/mainControlImageViewStyle" />
+
+                    <TextView
+                        style="@style/mainControlTextViewStyle"
+                        android:text="stop" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="error" />
+
+                    <TextView
+                        android:id="@+id/tvAssemblyError"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="#12121212"
+                        android:text="" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="分流线" />
+
+                <LinearLayout style="@style/mainControlLinearLayoutStyle">
+
+                    <ImageView
+                        android:id="@+id/ivShuntInit"
+                        style="@style/mainControlImageViewStyle" />
+
+                    <TextView
+                        style="@style/mainControlTextViewStyle"
+                        android:text="init" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/mainControlLinearLayoutStyle">
+
+                    <ImageView
+                        android:id="@+id/ivShuntPreop"
+                        style="@style/mainControlImageViewStyle" />
+
+                    <TextView
+                        style="@style/mainControlTextViewStyle"
+                        android:text="preop" />
+                </LinearLayout>
+
+
+                <LinearLayout style="@style/mainControlLinearLayoutStyle">
+
+                    <ImageView
+                        android:id="@+id/ivShuntOp"
+                        style="@style/mainControlImageViewStyle" />
+
+                    <TextView
+                        style="@style/mainControlTextViewStyle"
+                        android:text="op" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/mainControlLinearLayoutStyle">
+
+                    <ImageView
+                        android:id="@+id/ivShuntStop"
+                        style="@style/mainControlImageViewStyle" />
+
+                    <TextView
+                        style="@style/mainControlTextViewStyle"
+                        android:text="stop" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="error" />
+
+                    <TextView
+                        android:id="@+id/tvShuntError"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="#12121212"
+                        android:text="" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="立体库" />
+
+                <LinearLayout style="@style/mainControlLinearLayoutStyle">
+
+                    <ImageView
+                        android:id="@+id/ivWarehouseInit"
+                        style="@style/mainControlImageViewStyle" />
+
+                    <TextView
+                        style="@style/mainControlTextViewStyle"
+                        android:text="init" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/mainControlLinearLayoutStyle">
+
+                    <ImageView
+                        android:id="@+id/ivWarehousePreop"
+                        style="@style/mainControlImageViewStyle" />
+
+                    <TextView
+                        style="@style/mainControlTextViewStyle"
+                        android:text="preop" />
+                </LinearLayout>
+
+
+                <LinearLayout style="@style/mainControlLinearLayoutStyle">
+
+                    <ImageView
+                        android:id="@+id/ivWarehouseOp"
+                        style="@style/mainControlImageViewStyle" />
+
+                    <TextView
+                        style="@style/mainControlTextViewStyle"
+                        android:text="op" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/mainControlLinearLayoutStyle">
+
+                    <ImageView
+                        android:id="@+id/ivWarehouseStop"
+                        style="@style/mainControlImageViewStyle" />
+
+                    <TextView
+                        style="@style/mainControlTextViewStyle"
+                        android:text="stop" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="error" />
+
+                    <TextView
+                        android:id="@+id/tvWarehouseError"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="#12121212"
+                        android:text="" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+    </LinearLayout>
+
+</android.support.v4.widget.SwipeRefreshLayout>

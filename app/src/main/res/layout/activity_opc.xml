@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/slOpc"
+    tools:context=".activity.OPCActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                style="@style/opcLinearLayout">
+
+                <TextView
+                    style="@style/opcTextShow"
+                    android:text="AGV" />
+
+                <TextView
+                    android:id="@+id/tvOpcAgv"
+                    style="@style/opcTextShowInfo"
+                    android:text="" />
+            </LinearLayout>
+
+
+            <LinearLayout style="@style/opcLinearLayout">
+
+                <TextView
+                    style="@style/opcTextShow"
+                    android:text="加工线" />
+
+                <TextView
+                    android:id="@+id/tvOpcProcess"
+                    style="@style/opcTextShowInfo"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/opcLinearLayout">
+
+                <TextView
+                    style="@style/opcTextShow"
+                    android:text="装配线" />
+
+                <TextView
+                    android:id="@+id/tvOpcAssembly"
+                    style="@style/opcTextShowInfo"
+                    android:text="" />
+            </LinearLayout>
+
+
+            <LinearLayout style="@style/opcLinearLayout">
+
+                <TextView
+                    style="@style/opcTextShow"
+                    android:text="分流线" />
+
+                <TextView
+                    android:id="@+id/tvOpcShunt"
+                    style="@style/opcTextShowInfo"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/opcLinearLayout">
+
+                <TextView
+                    style="@style/opcTextShow"
+                    android:text="立体库" />
+
+                <TextView
+                    android:id="@+id/tvOpcWarehouse"
+                    style="@style/opcTextShowInfo"
+                    android:text="" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+    </RelativeLayout>
+</android.support.v4.widget.SwipeRefreshLayout>

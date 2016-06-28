@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/slAgv"
+    tools:context=".activity.AgvActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        >
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="49"
+        >
+
+
+
+    <ImageView
+        android:id="@+id/ivAgvBg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/agv_bg" />
+
+        <!--<FrameLayout-->
+            <!--android:id="@+id/flLocation"-->
+            <!--android:layout_width="20dp"-->
+            <!--android:layout_height="20dp"-->
+            <!--android:background="#00ff00"-->
+
+            <!--/>-->
+    </RelativeLayout>
+    <ScrollView
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvShowAgvStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="AGV通信状态"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tvShowAgv1Status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvShowAgvStatus"
+                    android:layout_marginLeft="10dp"
+                    android:text="AGV1"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/tvAgv1Status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvShowAgvStatus"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@id/tvShowAgv1Status"
+                    android:layout_toRightOf="@id/tvShowAgv1Status"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/tvShowAgv2Status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvShowAgvStatus"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toEndOf="@id/tvAgv1Status"
+                    android:layout_toRightOf="@id/tvAgv1Status"
+                    android:text="AGV2"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/tvAgv2Status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvShowAgvStatus"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@id/tvShowAgv2Status"
+                    android:layout_toRightOf="@id/tvShowAgv2Status"
+                    android:text="" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/tvShowAgvInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="AGV综合信息"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvShowAgvInfo">
+
+                    <TableRow>
+
+                        <TextView
+                            android:id="@+id/tvShowAgv1CurrentStation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginStart="10dp"
+                            android:maxEms="7"
+                            android:text="1号AGV当前站点"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:id="@+id/tvShowAgv2CurrentStation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:maxEms="7"
+                            android:text="1号AGV当前站点"
+                            android:textColor="#000000"
+
+                            />
+
+                    </TableRow>
+
+
+                    <TableRow>
+
+                        <TextView
+
+                            android:id="@+id/tvAgv1CurrentStation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginStart="10dp"
+                            android:text="" />
+
+                        <TextView
+                            android:id="@+id/tvAgv2CurrentStation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginStart="10dp"
+                            android:text="" />
+
+
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:id="@+id/tvShowAgv1CurrentTask"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="10dp"
+                            android:maxEms="7"
+                            android:text="1号AGV当前任务"
+
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:id="@+id/tvShowAgv2CurrentTask"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="10dp"
+                            android:maxEms="7"
+                            android:text="2号AGV当前任务"
+                            android:textColor="#000000" />
+
+
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+
+                            android:id="@+id/tvAgv1CurrentTask"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginStart="10dp"
+                            android:text="" />
+
+                        <TextView
+                            android:id="@+id/tvAgv2CurrentTask"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginStart="10dp"
+                            android:text="" />
+
+
+                    </TableRow>
+
+
+                    <TableRow>
+
+                        <TextView
+                            android:id="@+id/tvShowAgv1CurrentSingleTask"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="10dp"
+                            android:maxEms="7"
+                            android:text="1号AGV当前单项任务"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:id="@+id/tvShowAgv2CurrentSingleTask"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="10dp"
+                            android:maxEms="7"
+                            android:text="2号AGV当前单项任务"
+                            android:textColor="#000000" />
+
+
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:id="@+id/tvAgv1CurrentSingleTask"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginStart="10dp"
+                            android:text="" />
+
+                        <TextView
+                            android:id="@+id/tvAgv2CurrentSingleTask"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginStart="10dp"
+                            android:text="" />
+
+                    </TableRow>
+
+
+                    <!--<SeekBar-->
+                        <!--android:id="@+id/seekBarWidth"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--/>-->
+
+                    <!--<SeekBar-->
+                        <!--android:layout_marginTop="10dp"-->
+                        <!--android:id="@+id/seekBarHeight"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--/>-->
+
+                </TableLayout>
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+    </LinearLayout>
+</android.support.v4.widget.SwipeRefreshLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Mes手机端</string>
+    <string name="main_control">主控制界面</string>
+    <string name="agv">AGV调度</string>
+    <string name="plan">计划任务</string>
+    <string name="stock">库存管理</string>
+    <string name="OPC">OPC</string>
+
+</resources>
